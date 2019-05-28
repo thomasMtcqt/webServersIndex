@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
 	<head>
 		<meta charset="utf-8">
 		<title>Hello server</title>
@@ -7,12 +7,13 @@
 
 	<body>
 		<p>Hello</p>
-		<p>id="server"</p>
+		<p id="server"></p>
 		<script>
 			function getServer() {
 				var server = location.hostname;
-				document.getElementById("server").innerHTML = getServer();
+               			return server;
 			}
+           		 document.getElementById("server").innerHTML = getServer();
 		</script>
 	</body>	
 </html>
