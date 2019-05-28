@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>Hello server</title>
+	</head>
+
+	<body>
+		<p>Hello</p>
+		<p>id="server"</p>
+		<script>
+			function getServer() {
+				var server = location.hostname;
+				document.getElementById("server").innerHTML = getServer();
+			}
+		</script>
+	</body>	
+</html>
